@@ -1,0 +1,14 @@
+com\estivman\physics_proyect\physics_simulator\PhysicsSimulatorApplication.class
+com\estivman\physics_proyect\physics_simulator\controllers\SimulatorController.class
+com\estivman\physics_proyect\physics_simulator\utils\MaterialJsonReader.class
+com\estivman\physics_proyect\physics_simulator\models\Material$1.class
+com\estivman\physics_proyect\physics_simulator\utils\ExpansionTypeEnum.class
+com\estivman\physics_proyect\physics_simulator\dtos\CompositeExpansionDto.class
+com\estivman\physics_proyect\physics_simulator\services\ThermalExpansionService.class
+com\estivman\physics_proyect\physics_simulator\dtos\ParseMaterialDto.class
+com\estivman\physics_proyect\physics_simulator\models\Material.class
+com\estivman\physics_proyect\physics_simulator\models\IMaterial.class
+com\estivman\physics_proyect\physics_simulator\services\IThermalExpansionService.class
+com\estivman\physics_proyect\physics_simulator\utils\MaterialJsonReader$2.class
+com\estivman\physics_proyect\physics_simulator\utils\MaterialJsonReader$1.class
+com\estivman\physics_proyect\physics_simulator\utils\SearchElement.class
