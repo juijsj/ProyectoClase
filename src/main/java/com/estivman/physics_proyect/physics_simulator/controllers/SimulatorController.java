@@ -39,7 +39,7 @@ public class SimulatorController {
     // Under here second endpoint
 
     // Under here third endpoint
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://thermaldilatation.vercel.app")
     @PostMapping("/calculateExpansionSystem")
     public String calcExpansion(@RequestBody ParseMaterialDto request) {
         return thermalExpansionService.calcExpansion(
@@ -50,7 +50,7 @@ public class SimulatorController {
                 request.getSolidInitialDimension());
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://thermaldilatation.vercel.app")
     @PostMapping("/calculateCompositeSystem")
     public String[] calculateCompositeSystemExpansion(@RequestBody CompositeExpansionDto request) {
         // Extraer los valores del DTO
@@ -69,13 +69,13 @@ public class SimulatorController {
                 liquidMaterialName, liquidInitialTemperature, liquidFinalTemperature, liquidInitialDimension);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://thermaldilatation.vercel.app")
     @GetMapping("/getSolidMaterials")
     public List<Material> getSolidMaterials() {
         return thermalExpansionService.getSolidMaterialsList();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://thermaldilatation.vercel.app")
     @GetMapping("/getLiquidMaterials")
     public List<Material> getLiquidMaterials() {
         return thermalExpansionService.getLiquidMaterialsList();
