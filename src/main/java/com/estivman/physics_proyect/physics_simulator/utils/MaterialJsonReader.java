@@ -2,6 +2,9 @@ package com.estivman.physics_proyect.physics_simulator.utils;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,20 +30,16 @@ public class MaterialJsonReader {
         return materials;
     }
 
-    public List<Material> loadLiquidMaterials() {
+   public List<Material> loadLiquidMaterials() {
         Gson gson = new Gson();
-        Type listType = new TypeToken<List<Material>>() {
-        }.getType();
+        Type listType = new TypeToken<List<Material>>() {}.getType();
         List<Material> materials = new ArrayList<>();
-        try {
-            JsonReader reader = new JsonReader(new FileReader("src/main/resources/liquid-materials.json"));
+        try (InputStream inputStream = getClass().getResourceAsStream("/liquid-materials.json");
+             InputStreamReader reader = new InputStreamReader(inputStream)) {
             materials = gson.fromJson(reader, listType);
-            
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("111111111111111111111111111111111111111111111111111111111111111111111111111:  " +materials.size());
         return materials;
     }
-
 }
