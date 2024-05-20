@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ACETONA",
+    "thermalExpansionCoefficient": "0.00015",
+    "texturePath": "/assets/images/acetone-texture.webp",
+    "materialImagePath": "/assets/images/acetone-image.webp",
+    "minTemperature": "-95",
+    "maxTemperature": "56"
+  },
+  {
+    "name": "ALCOHOL ETILICO",
+    "thermalExpansionCoefficient": "0.000112",
+    "texturePath": "/assets/images/ethyl-alcohol-texture.webp",
+    "materialImagePath": "/assets/images/ethyl-alcohol-image.webp",
+    "minTemperature": "-114.1",
+    "maxTemperature": "78"
+  },
+  {
+    "name": "BENCENO",
+    "thermalExpansionCoefficient": "0.000124",
+    "texturePath": "/assets/images/benzene-texture.webp",
+    "materialImagePath": "/assets/images/benzene-image.webp",
+    "minTemperature": "5.5",
+    "maxTemperature": "80.1"
+  },
+  {
+    "name": "GASOLINA",
+    "thermalExpansionCoefficient": "0.00096",
+    "texturePath": "/assets/images/gasoline-texture.webp",
+    "materialImagePath": "/assets/images/gasoline-image.webp",
+    "minTemperature": "-60",
+    "maxTemperature": "150"
+  },
+  {
+    "name": "GLICERINA",
+    "thermalExpansionCoefficient": "0.000485",
+    "texturePath": "/assets/images/glycerin-texture.webp",
+    "materialImagePath": "/assets/images/glycerin-image.webp",
+    "minTemperature": "17.8",
+    "maxTemperature": "290"
+  },
+  {
+    "name": "MERCURIO",
+    "thermalExpansionCoefficient": "0.000182",
+    "texturePath": "/assets/images/mercury-texture.webp",
+    "materialImagePath": "/assets/images/mercury-image.webp",
+    "minTemperature": "-38.83",
+    "maxTemperature": "356.7"
+  }
+]

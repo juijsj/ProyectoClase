@@ -35,9 +35,11 @@ public class MaterialJsonReader {
         try {
             JsonReader reader = new JsonReader(new FileReader("src/main/resources/liquid-materials.json"));
             materials = gson.fromJson(reader, listType);
+            
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        System.out.println(materials.size());
         return materials;
     }
 

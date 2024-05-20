@@ -27,6 +27,7 @@ public class ThermalExpansionService implements IThermalExpansionService {
 
     @Override
     public Material searchLiquidElement(String liquidMaterialName) {
+
         return SearchElement.searchElement(liquidMaterialName, liquidMaterialsList);
     }
 
@@ -67,6 +68,7 @@ public class ThermalExpansionService implements IThermalExpansionService {
     }
 
     public List<Material> getLiquidMaterialsList() {
+        System.out.println(liquidMaterialsList.get(0).getName());
         return liquidMaterialsList;
     }
 }
