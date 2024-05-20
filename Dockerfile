@@ -7,7 +7,7 @@ COPY . /app
 
 RUN mvn clean package
 
-FROM openjdk:17-jre-slim-buster
+FROM openjdk:17-jre-slim
 
 EXPOSE 8080
 
