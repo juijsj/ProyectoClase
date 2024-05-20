@@ -39,7 +39,7 @@ public class MaterialJsonReader {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println(materials.size());
+        System.out.println("111111111111111111111111111111111111111111111111111111111111111111111111111:  " +materials.size());
         return materials;
     }
 
